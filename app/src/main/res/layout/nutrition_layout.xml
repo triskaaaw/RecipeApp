@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="80dp"
+    android:layout_height="90dp"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="8dp"
+    android:background="@drawable/nutrition_card_bg"
+    android:layout_margin="4dp">
+
+    <!-- Label Nutrisi -->
+    <TextView
+        android:id="@+id/nutritionLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="kcal"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:textSize="14sp" />
+
+    <!-- Garis Putih -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/white"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp" />
+
+    <!-- Value Nutrisi -->
+    <TextView
+        android:id="@+id/nutritionValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="264"
+        android:textColor="@android:color/white"
+        android:textSize="14sp"
+        android:textStyle="bold"/>
+</LinearLayout>

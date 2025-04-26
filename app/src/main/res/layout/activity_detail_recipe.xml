@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".activities.DetailRecipeActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Recipe Image -->
+<!--        <ImageView-->
+<!--            android:id="@+id/recipeImage"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="200dp"-->
+<!--            android:scaleType="centerCrop"-->
+<!--            android:contentDescription="Recipe Image"-->
+<!--            android:src="@drawable/chicken_mushroom" />-->
+
+        <!-- Recipe Image with Like Button -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+
+            <ImageView
+                android:id="@+id/recipeImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:contentDescription="Recipe Image"
+                android:src="@drawable/chicken_mushroom"/>
+
+            <!-- Like/Unlike Button -->
+            <ImageButton
+                android:id="@+id/likeButton"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_gravity="bottom|end"
+                android:layout_margin="12dp"
+                android:background="@drawable/like_button_bg"
+                android:src="@drawable/ic_favorite_red"
+                android:scaleType="centerInside"
+                android:elevation="6dp"
+                android:contentDescription="Like or unlike this recipe"
+                tools:ignore="TouchTargetSizeCheck" />
+        </FrameLayout>
+
+
+        <!-- Recipe Title -->
+        <TextView
+            android:id="@+id/recipeTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Chicken Supreme"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp" />
+
+        <!-- Author -->
+        <TextView
+            android:id="@+id/recipeAuthor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="by Esther Clark"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="4dp">
+
+            <!-- Rating -->
+            <TextView
+                android:id="@+id/recipeRating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4.8"
+                android:textSize="14sp"
+                android:drawableLeft="@drawable/star"
+                android:drawablePadding="4dp" />
+
+            <!-- Cooking Time -->
+            <TextView
+                android:id="@+id/recipeCookingTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="45 mins"
+                android:textSize="14sp"
+                android:drawableLeft="@drawable/time"
+                android:drawablePadding="4dp"
+                android:layout_marginStart="16dp" />
+
+        </LinearLayout>
+
+        <!-- Description -->
+        <TextView
+            android:id="@+id/recipeDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enjoy this creamy chicken supreme with mashed potato and steamed green veggies."
+            android:textSize="14sp" />
+
+        <!-- Category -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/categoryRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="8dp"
+            android:overScrollMode="never"
+            android:nestedScrollingEnabled="false"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Nutrition Information -->
+        <TextView
+            android:id="@+id/nutritionLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nutrition per serving"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/nutritionRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:nestedScrollingEnabled="false" />
+
+
+        <!-- Ingredients -->
+        <TextView
+            android:id="@+id/ingredientsLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ingredients"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp"/>
+
+        <TextView
+            android:id="@+id/ingredients"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1 tbsp olive oil\n1 small onion\n50g smoked bacon lardons"
+            android:textSize="14sp" />
+
+        <!-- Directions -->
+        <TextView
+            android:id="@+id/directionsLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Directions"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:id="@+id/directions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/directions_text"
+            android:textSize="14sp"
+            android:justificationMode="inter_word"/>
+
+        <!-- Recommendations -->
+        <TextView
+            android:id="@+id/recommendationsLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="You may also like"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recommendationRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:nestedScrollingEnabled="false"
+            android:layout_marginBottom="16dp"/>
+
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

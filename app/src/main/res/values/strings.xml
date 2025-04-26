@@ -1,0 +1,64 @@
+<resources>
+    <string name="app_name">Recipe App</string>
+    <string name="start">Let\'s Get Started</string>
+    <string name="user_login">User Login</string>
+    <string name="user_form">User Form</string>
+    <string name="user_form2">Please fill this form!</string>
+    <string name="question1">What category do you want in a food recipe?</string>
+    <string name="question2">What ingredients do you want in a recipe?</string>
+    <string name="send">Send</string>
+    <string name="ingredients">Ingredients</string>
+    <string name="user_login2"> Hi\! welcome back, \n
+    you\'ve been missed</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="name">Name</string>
+    <string name="login">Login</string>
+    <string name="to_signup">Don\'t have an account\? Sign up</string>
+    <string name="user_signup">Create Account</string>
+    <string name="user_signup2">Fill your information below\!\n
+It\'s free and only takes a minute</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="signup">Sign Up</string>
+    <string name="to_login">Already have an account\? Login</string>
+    <string name="user_icon">User Icon</string>
+    <string name="hi">Hi,</string>
+    <string name="hi2">Make your own food,\nwhat do you want to cook today\?</string>
+    <string name="search_icon">Search Icon</string>
+    <string name="search">Search</string>
+    <string name="recipes_for_you">Recipes for you</string>
+    <string name="top5">Top 5 recipes</string>
+    <string name="directions_text">
+    STEP 1: Heat half the oil and butter in a pan.
+    STEP 2: Add the bacon and cook until golden brown.
+    </string>
+    <string name="by_author">By. %1$s</string>
+    <string name="favorite_recipes">favorite_recipe</string>
+    <string name="fav_history">Favorite Recipes</string>
+
+    <string-array name="data_title">
+        <item>Easy butter chicken</item>
+        <item>Chicken cacciatore one pot with orzo</item>
+        <item>Chicken and chorizo ragu</item>
+        <item>Chinese chicken curry</item>
+        <item>Chicken jalfrezi</item>
+        <item>One pot chicken and mushroom risotto</item>
+        <item>Chicken noodle soup</item>
+        <item>Chicken pasta bake</item>
+        <item>Chicken stroganoff</item>
+        <item>Classic roast chicken and gravy</item>
+    </string-array>
+
+    <string-array name="data_image">
+        <item>https://images.immediate.co.uk/production/volatile/sites/30/2020/08/butter-chicken-cf6f9e2.jpg</item>
+        <item>https://images.immediate.co.uk/production/volatile/sites/30/2020/08/chicken-cacciatore-one-pot-with-orzo-336ef36.jpg</item>
+        <item>https://images.immediate.co.uk/production/volatile/sites/30/2020/08/chicken-chorizo-ragu-95dc274.jpg</item>
+        <item>https://images.immediate.co.uk/production/volatile/sites/30/2020/08/chicken-curry-9117113.jpg</item>
+        <item>https://images.immediate.co.uk/production/volatile/sites/30/2020/08/chicken-jalfrezi--020ac52.jpg</item>
+        <item>https://images.immediate.co.uk/production/volatile/sites/30/2020/08/chicken-mushroom-risotto-5ed8f22.jpg</item>
+        <item>https://images.immediate.co.uk/production/volatile/sites/30/2020/08/recipe-image-legacy-id-1035613_10-0e544b7.jpg</item>
+        <item>https://images.immediate.co.uk/production/volatile/sites/30/2020/08/chicken_pasta_bake-06fe2d6.jpg</item>
+        <item>https://images.immediate.co.uk/production/volatile/sites/30/2022/09/Chicken-Stroganoff-06462c0.jpg</item>
+        <item>https://images.immediate.co.uk/production/volatile/sites/30/2020/08/recipe-image-legacy-id-52531_12-62ea9e0.jpg</item>
+    </string-array>
+</resources>
